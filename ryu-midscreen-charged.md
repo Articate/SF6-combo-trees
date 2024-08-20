@@ -1,8 +1,26 @@
 ::: mermaid
 ---
-title: Ryu - Midscreen, Denjin charge
+title: Ryu - Optimal combo tree
+config:
+  flowchart:
+    nodeSpacing: 80
+    rankSpacing: 50
+  theme: dark
+  themeVariables:
+    nodeBorder: '#ccc'
 ---
+
 graph LR
+	%% Styling
+	classDef special fill:#922
+	classDef od fill:#777700
+	classDef drc fill:#171,stroke-width:2px
+	classDef dr fill:#171,stroke-width:1px
+	classDef ch fill:#828
+	classDef block fill:#444
+	classDef super fill:#22b,stroke-width:2px
+	classDef start fill:#279
+
 	ch_s1([j.HK]) --> ch_r1(s.HK)
 	ch_r1 --> ch_r1-2(c.MK)
 	ch_r1-2 -.-> |2 dg| ch_r1-3(OD.C-Palm)
