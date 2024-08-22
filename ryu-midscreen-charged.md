@@ -1,6 +1,9 @@
 ::: mermaid
+
 ---
-title: Ryu - Optimal combo tree
+
+title: Ryu - Chart type
+
 config:
   flowchart:
     nodeSpacing: 80
@@ -11,27 +14,34 @@ config:
 ---
 
 graph LR
-	%% Styling
-	classDef special fill:#922
-	classDef od fill:#777700
-	classDef drc fill:#171,stroke-width:2px
-	classDef dr fill:#171,stroke-width:1px
-	classDef ch fill:#828
-	classDef block fill:#444
-	classDef super fill:#22b,stroke-width:2px
-	classDef start fill:#279
+  %% Styling
+  classDef lSpecial fill:#07a
+  classDef mSpecial fill:#922
+  classDef hSpecial fill:#922
+  classDef od fill:#616
+  classDef drc fill:#171,stroke-width:1.5px,stroke-dasharray: 10 7
+  classDef dr fill:#171,stroke-width:1px
+  classDef ch fill:#825
+  classDef block fill:#444
+  classDef super fill:#22b,stroke-width:2px
+  classDef start fill:#008575
+  classDef throw fill:#c61
 
-	ch_s1([j.HK]) --> ch_r1(s.HK)
-	ch_r1 --> ch_r1-2(c.MK)
-	ch_r1-2 -.-> |2 dg| ch_r1-3(OD.C-Palm)
-	ch_r1-3 --> ch_r1-4(s.HP)
-	ch_r1-4 -.-> |3 dg| ch_r1-e(DRC)
-	ch_r1-e -.-> ch_r2(s.HP)
-	ch_r2 --> ch_r2-2(b.HP)
-	ch_r2-2 -.-> ch_r2-3(H.DP)
-	ch_r1-e -.-> ch_r3(s.HK)
-	ch_r3 --> ch_r3_2(s.HP)
-	ch_r3_2 -.-> |2	 dg| ch_r3_3(OD.Donkey)
-	ch_r3_3 --> ch_r3_4(b.HK)
-	ch_r3_4 -.-> chr3_5(H.DP)
+    s1-jhk ---> s1-shk(s.HK) --> s1-cmk(c.MK) --x
+      s1a-odpalm & s1b-hpalm
+    s1a-odpalm --> s1a-shp(s.HP) --x s1a-hdp
+    s1b-hpalm --> dr1 --x s1b-shp(s.HP) --x s1b-hdp
+
+    s2-cmk --x drc1 --x s2-shp(s.HP)
+    s2-shp --> s2-bhp(b.HP) --> s1a-odpalm & s1b-hpalm
+
+    drc1[/DRC/]:::drc
+    s1b-hdp{{H.DP}}:::hSpecial
+    s1b-hpalm{{H.C-Palm}}:::hSpecial
+    s1a-hdp{{H.DP}}:::hSpecial
+    s1-jhk([j.HK]):::start
+    s2-cmk([c.MK]):::start
+    s1a-odpalm{{OD.C-Palm}}:::od
+
+    dr1[/DR\]:::dr
 :::
