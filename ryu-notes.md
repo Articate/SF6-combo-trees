@@ -109,7 +109,7 @@ Corner with charge
 
     j.HK, s.HK, c.MK xx OD.C-Plam, s.HP xx DRC xx s.HP, b.HP xx H.DP
 
-### 6 drive bar (4376)
+### 6 drive bar (4376) |
 
     j.HK, s.HP xx OD.C-Palm, s.HP xx DRC xx s.HK, s.HP xx DRC xx s.HP, b.HP xx H.Donkey, L.DP
 
@@ -178,7 +178,7 @@ PC Corner Charged
 
     (PC) s.HK, s.HP xx DRC xx s.HK, s.HP xx H.C-Palm, DR xx s.HP xx M.Palm, H.DP
 
-### 6 drive bar (4656)
+### 6 drive bar (4656) |  max 4742
 
     (PC) s.HK, s.HP xx OD.C-Palm, s.HP xx DRC xx s.HK, s.HP xx DRC xx s.HP, b.HP xx H.Donkey, L.DP
 

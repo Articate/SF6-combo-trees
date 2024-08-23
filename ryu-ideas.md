@@ -35,7 +35,7 @@ graph LR
     shp2(s.HP) --x spec2
     shp2 -. corner .-> odtatsu -.-> hdp
 
-  %%pc[[s.HK]] --> shp3(s.HP) --x odcpalm2 --> sph3(s.HP) --x odtatsu2 --> dr1 --> smp(s.MP) --x drc2 --> chp(c.HP) --x mdonkey --> hdp2 --x su3[[su3]]:::super
+  pc[["(PC) s.HK"]]:::start --> shp3(s.HP) --x odcpalm2{{OD.C-Palm}}:::od --> sph3(s.HP) --x odtatsu2{{OD.Tatsu}}:::od --> dr1[/DR\]:::dr --> smp(s.MP) --x drc2[/DRC/]:::drc --> chp(c.HP) --x mdonkey{{M.Donkey}}:::mSpecial --> hdp2{{H.DP}}:::hSpecial --x su3[[su3]]:::super
 
   %%hdp2{{H.DP}}:::hSpecial
   %%mdonkey{{M.Donkey}}:::mSpecial

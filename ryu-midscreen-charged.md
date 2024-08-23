@@ -2,7 +2,7 @@
 
 ---
 
-title: Ryu - Chart type
+title: Ryu - Midscreen, Denjin
 
 config:
   flowchart:
